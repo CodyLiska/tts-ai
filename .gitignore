@@ -32,3 +32,6 @@ static/output.wav
 # === OS-specific ===
 ehthumbs.db
 Thumbs.db
+
+# === Windows-specific ===
+*:Zone.Identifier
