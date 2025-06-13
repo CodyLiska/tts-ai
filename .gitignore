@@ -1,0 +1,34 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+
+# === Virtual Environment ===
+venv/
+env/
+.tts-env/
+tts-env/
+
+# === FastAPI Static Files ===
+static/output.wav
+
+# === Jupyter and IDEs ===
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# === macOS system files ===
+.DS_Store
+
+# === Test/Debug Files ===
+*.bak
+*.swp
+*.tmp
+*.old
+
+# === OS-specific ===
+ehthumbs.db
+Thumbs.db

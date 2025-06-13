@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Local TTS Reader</title>
+  </head>
+  <body style="font-family: sans-serif; padding: 2rem">
+    <h2>📣 Enter text to speak:</h2>
+    <form method="post" action="/speak">
+      <textarea name="text" rows="6" cols="60" required>
+{{ text or "" }}</textarea
+      ><br /><br />
+      <button type="submit">🗣️ Generate Speech</button>
+    </form>
+
+    {% if audio_url %}
+    <h3>🎧 Result:</h3>
+    <audio controls autoplay>
+      <source src="{{ audio_url }}" type="audio/wav" />
+      Your browser does not support the audio element.
+    </audio>
+    {% endif %}
+  </body>
+</html>

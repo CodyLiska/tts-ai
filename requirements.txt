@@ -1,0 +1,16 @@
+# TTS engine and dependencies
+TTS==0.22.0
+torch==2.6.0
+torch==2.2.1  # Latest confirmed MPS-compatible + XTTS-compatible
+transformers==4.38.2
+
+# FastAPI backend
+fastapi==0.110.2
+uvicorn==0.29.0
+jinja2==3.1.3
+
+# Optional: used by FastAPI for form and template handling
+python-multipart==0.0.9
+
+# Optional: for Windows if ffmpeg is later needed
+# ffmpeg-python==0.2.0
