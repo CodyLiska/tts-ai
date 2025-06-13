@@ -2,6 +2,7 @@
 
 ### Run App
 - run in WSL2
+- create a folder named `static` in the root for the output.wav to be saved to
 - create/start a `tts-env` virtual environment
   - source tts-env/bin/activate if the virtual environment has already been created
 - run `pip install -r requirements.txt` if first time running app
