@@ -1,6 +1,8 @@
 # Text to Voice with AI Female
 
 ### Run App
+
+#### On Windows
 - run in WSL2
 - create a folder named `static` in the root for the output.wav to be saved to
 - create/start a `tts-env` virtual environment
@@ -8,19 +10,20 @@
 - run `pip install -r requirements.txt` if first time running app
 - run `uvicorn main:app --reload` to start the app
 
-### On MacOS
+#### On MacOS
 - Enable MPS Backend in `main.py`
 - brew install portaudio libsndfile ffmpeg
 - folder structure below
-tts-ai/
-├── main.py
-├── requirements.txt
-├── en_sample.wav
-├── static/
-│   └── (empty or output.wav)
-├── templates/
-│   └── index.html
-
+  ```json  
+    tts-ai/
+    ├── main.py
+    ├── requirements.txt
+    ├── en_sample.wav
+    ├── static/
+    │   └── (empty or output.wav)
+    ├── templates/
+    │   └── index.html
+  ```
 - cd path/to/tts-ai
 - python3 -m venv tts-env
 - source tts-env/bin/activate
